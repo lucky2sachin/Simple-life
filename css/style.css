@@ -1,0 +1,168 @@
+body {
+  color: #707070;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+header {
+  background-color: #f8f8f8;
+  margin-bottom: 3em;
+  padding: 3em 0 4em 0;
+}
+h1{
+    font-size: 1.6rem;
+}
+h1,
+h2 {
+  color: #143774;
+  font-family: 'Lora', serif;
+}
+h2{
+    font-size: 1.2em;
+}
+.title p,
+a {
+  color: #1792d2;
+}
+.nav-list a {
+  color: #717171;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.heading {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+img {
+  width: 100%;
+}
+.title h1 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.title p {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list-item {
+  margin-left: 1.5em;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.nav-list-item a:hover,
+.nav-list-item a:focus,
+.nav .nav-list-item .current-page{
+    border-bottom: 0.1rem solid #717171;
+    padding-bottom: 0.4em;
+    color: #1792d2;
+}
+.nav .nav-list-item .current-page{
+    color:#707070;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.left-content, .detail {
+  width: 70%;
+}
+.left-content h2 {
+  font-weight: 400;
+  margin: 0;
+}
+.date {
+  font-size: 0.60rem;
+}
+.right-content, .image {
+  width: 25%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+.continue-reading {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+hr {
+  color: #707070;
+  opacity: 50%;
+  margin: 1.5rem 0;
+}
+.right-content .right-1,
+.right-content .right-2{
+    border: 1rem solid #EBEBEB;
+    padding: 1rem;
+    margin-bottom: 2em;
+}
+.right-content p{
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-size: 00.85rem;
+}
+.right-content h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.right-1 p{
+    font-size: 0.7rem;
+}
+.right-content hr{
+    margin: 1rem 0;
+    opacity: 25%;
+}
+footer {
+  background-color: #143774;
+  text-align: center;
+  color: #ffffff;
+  padding: 2em;
+  margin-top: 2em;
+}
+.intro img{
+  clip: rect(100px, 20px, 50px, 100px);
+  object-fit: cover;  
+}
+@media (max-width: 1025px)
+{
+  .heading, .nav-list, .main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list-item{
+    margin: 0 0 1em 0;
+  }
+  .nav-list{
+    padding: 0;
+  }
+  
+  .left-content, .right-content, .image, .detail{
+    width: 100%;
+  }
+  .content{
+    flex-direction: column;
+  }
+}
