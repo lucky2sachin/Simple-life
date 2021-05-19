@@ -10,6 +10,14 @@ header {
   margin-bottom: 3em;
   padding: 3em 0 4em 0;
 }
+strong{
+  font-weight: 600;
+}
+.accent{
+  color: #1792d2;
+  font-size: 1.1rem;
+  font-family: 'Lora', serif;
+}
 h1{
     font-size: 1.6rem;
 }
@@ -21,6 +29,7 @@ h2 {
 h2{
     font-size: 1.2em;
 }
+
 .title p,
 a {
   color: #1792d2;
@@ -56,6 +65,7 @@ img {
 .nav-list {
   list-style: none;
   display: flex;
+  padding-left: 0;
 }
 .nav-list-item {
   margin-left: 1.5em;
@@ -85,6 +95,9 @@ img {
 .left-content h2 {
   font-weight: 400;
   margin: 0;
+}
+.left-content-content img{
+  margin-bottom: 3em;
 }
 .date {
   font-size: 0.60rem;
@@ -146,7 +159,7 @@ footer {
   clip: rect(100px, 20px, 50px, 100px);
   object-fit: cover;  
 }
-@media (max-width: 1025px)
+@media (max-width: 954px)
 {
   .heading, .nav-list, .main{
     flex-direction: column;
